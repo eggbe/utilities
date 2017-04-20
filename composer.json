@@ -1,0 +1,23 @@
+{
+	"name": "eggbe/utilities",
+	"version": "1.1",
+	"type": "library",
+	"keywords": ["utilities"],
+	"description": "Universal utilities library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "hacpaka",
+			"email": "hacpaka@eggbe.com"
+		}
+	],
+	"require": {
+		"php": ">=7.0.0",
+		"eggbe/prototype": "dev-master"
+	},
+	"autoload": {
+		"psr-4": {
+			"Eggbe\\Utilities\\": "src/"
+		}
+	}
+}
