@@ -13,7 +13,7 @@ class AliasMaker {
 	 * @param array $Rules
 	 * @throws \Exception
 	 */
-	public function __construct(array $Rules) {
+	public function __construct(array $Rules = []) {
 		foreach ($Rules as $condition => $rule){
 
 			/**
