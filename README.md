@@ -19,7 +19,7 @@ composer require eggbe/hash-store
 ## Usage
 
 ### AliasMaker
-The AliasMaker component provides the simple way for class overriding by using a given list of aliases.
+The AliasMaker component provides the simple way for the class overriding by using a given list of aliases.
 
 The list if aliases could be assigned via constructor during the object creation:   
 
