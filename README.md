@@ -20,7 +20,7 @@ composer require eggbe/hash-store
 
 ### AliasMaker
 The AliasMaker component provides the simple way for the class overriding by using a given list of aliases.
-The list if aliases could be assigned via constructor during the object creation:   
+The list of aliases have to be assigned via constructor during the object creation:   
 
 ```php
 $AliasMaker = new \Eggbe\Utilities\AliasMaker([
