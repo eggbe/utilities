@@ -1,6 +1,6 @@
 {
 	"name": "eggbe/utilities",
-	"version": "1.0",
+	"version": "1.1",
 	"type": "library",
 	"keywords": ["utilities", "aliases"],
 	"description": "Universal utilities library",
