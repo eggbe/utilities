@@ -7,7 +7,7 @@ This is the powerful library provides the set of utilities for different needs.
 * [Eggbe/Helpers](https://github.com/eggbe/helpers)
 
 ## Install
-Here's a pretty simple way to start using Eggbe/Utilities via [composer](http://getcomposer.org):
+Here's the simpler way to start using Eggbe/Utilities via [composer](http://getcomposer.org):
 
 ```bash
 composer require eggbe/hash-store
