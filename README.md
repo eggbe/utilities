@@ -24,9 +24,9 @@ The list of aliases have to be assigned via constructor during the object creati
 
 ```php
 $AliasMaker = new \Eggbe\Utilities\AliasMaker([
-	'Api\Reference\Units' => 'App\Model\Units',
-	'Api\Reference\*' => 'App\Model\Reference',
-	'Api\Model\*' => 'App\Model\&',
+	'Api\Reference\Units' => 'App\Models\Units',
+	'Api\Reference\*' => 'App\Models\Reference',
+	'Api\Model\*' => 'App\Models\&',
 	'Api\Document\[Markets,Invoices,Prices]' => 'App\Document\&',
 ]);
 ```
@@ -34,14 +34,15 @@ $AliasMaker = new \Eggbe\Utilities\AliasMaker([
 Each rules contains of two parts. The left part of rule represents the condition and the right part represents the replacement. 
 Both parts could include some special characters.
 
-The first rule means what we want to override class ```Api\Reference\Units``` to ```App\Model\Units```. 
+The first rule means what we want to override class ```Api\Reference\Units``` to ```App\Models\Units```. 
 This is just the strict replacement so no any surprises here.  
 
 The second rule means what we want to override all classes started with the parent namespace ```Api\Reference\``` 
-to a single class ```App\Model\Reference```. 
+to a single class ```App\Models\Reference```. 
 
 The third rule is similar to the previous and means what we want to override all classes started with the parent namespace ```Api\Model\``` 
-to a similar class started with ```App\Model\```. The amppersand character is necessary to indicate the inserting position. 
+to a similar class started with ```App\Models\```. The amppersand character is necessary to indicate the inserting position. 
+For example the class ```Api\Model\Test``` will be overridden to ```App\Models\Test```.  
 
 And the last rule means what we want to override three defined classes started with the parent namespace ```Api\Document\``` 
 to a similar classes started with ```App\Document\```. 
