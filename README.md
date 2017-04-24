@@ -40,7 +40,7 @@ This is just the strict replacement so no any surprises here.
 The second rule means what we want to override all classes started with the parent namespace ```Api\Reference\``` 
 to a single class ```App\Model\Reference```. 
 
-The thirs rule is similar to the previous and means what we want to override all classes started with the parent namespace ```Api\Model\``` 
+The third rule is similar to the previous and means what we want to override all classes started with the parent namespace ```Api\Model\``` 
 to a similar class started with ```App\Model\```. The amppersand character is necessary to indicate the inserting position. 
 
 And the last rule means what we want to override three defined classes started with the parent namespace ```Api\Document\``` 
