@@ -22,12 +22,12 @@ class AliasMaker {
 			 *
 			 * If the condition string includes unsupported characters an exception will be thrown here.
 			 */
-			if (!preg_match('/^\\\?[\w\[\],\\\]+\*?$/', $condition)){
+			if (!preg_match('/^\\\?[\w\\\]+(?:\[[\w,]+\]|\*)?$/', $condition)){
 				throw new \Exception('Invalid condition: "' . $condition . '"!');
 			}
 
 			$condition = '/^\/?' . preg_replace('/(\\\+)/',
-				'\\\$1', preg_replace('/\*/', '.*', preg_replace_callback('/\[[\w,]+\]/', function($value){
+				'\\\$1', preg_replace('/\*/', '(.*)', preg_replace_callback('/\[[\w,]+\]/', function($value){
 					return '(' . implode('|', preg_split('/,+/', trim($value[0], ']['), -1, PREG_SPLIT_NO_EMPTY)) . ')';
 				}, $condition))) . '$/';
 
