@@ -35,7 +35,7 @@ Each rules contains of two parts. The left part of rule represents the condition
 Both parts could include some special characters.
 
 The first rule means what we want to override class ```Api\Reference\Units``` to ```App\Model\Units```. 
-This is the simple and strict rule so no any surprises here.  
+This is just the strict replacement so no any surprises here.  
 
 The second rule means what we want to override all classes started with the parent namespace ```Api\Reference\``` 
 to a single class ```App\Model\Reference```. 
