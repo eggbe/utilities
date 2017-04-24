@@ -44,8 +44,9 @@ The third rule is similar to the previous and means what we want to override all
 to a similar class started with ```App\Models\```. The amppersand character is necessary to indicate the inserting position. 
 For example the class ```Api\Model\Test``` will be overridden to ```App\Models\Test```.  
 
-And the last rule means what we want to override three defined classes started with the parent namespace ```Api\Document\``` 
-to a similar classes started with ```App\Document\```. 
+And the last rule means what we want to override only three defined classes started with the parent namespace ```Api\Document\``` 
+to a similar classes started with ```App\Document\```. In this case the replacement statement uses the ampersand character 
+in the same way like the previous rule.
 
 After configuring we can use AliasMaker anywhere in the code:
 
