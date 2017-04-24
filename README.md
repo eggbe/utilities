@@ -13,7 +13,7 @@ Here's a pretty simple way to start using Eggbe/Utilities via [composer](http://
 composer require eggbe/hash-store
 ```
 
-## List Of Components
+## Components
 * AliasMaker
 
 ## Usage
