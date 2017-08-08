@@ -14,16 +14,16 @@ composer require eggbe/hash-store
 ```
 
 ## Components
-* AliasMaker
+* Aliaser
 
 ## Usage
 
-### AliasMaker
-The AliasMaker component provides the simple way for the class overloading by using a given list of aliases.
+### Aliaser
+The Aliaser component provides the simple way for the class overloading by using a given list of aliases.
 The list of aliases have to be assigned via constructor during the object creation:   
 
 ```php
-$AliasMaker = new \Eggbe\Utilities\AliasMaker([
+$Aliaser = new \Eggbe\Utilities\Aliaser([
 	'Api\Reference\Units' => 'App\Models\Units',
 	'Api\Reference\*' => 'App\Models\Reference',
 	'Api\Model\*' => 'App\Models\&',
@@ -48,14 +48,13 @@ And the last rule means what we want to overload only three defined classes star
 to a similar classes started with ```App\Document\```. In this case the replacement statement uses the ampersand character 
 in the same way as the previous rule.
 
-After configuring we can use AliasMaker anywhere in the code:
+After configuring we can use Aliaser anywhere in the code:
 
 ```php
-$AliasMaker->alike('Api\Reference\Markets')
+$Aliaser->alike('Api\Reference\Markets')
 ```
-
-All returned values are cached so we haven't any reason to store results in variables. Also please pay attention to the conditions order 
-because AliasMaker always returns the first successful comparison.
+All returned values are cached so no any reason to store results in variables. 
+Also please pay attention to the conditions order because Aliaser always returns the result of first successful comparison only.
 
 ## Authors
 Made with love at [Eggbe](http://eggbe.com).

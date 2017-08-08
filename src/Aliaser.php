@@ -1,7 +1,7 @@
 <?php
 namespace Eggbe\Utilities;
 
-class AliasMaker {
+class Aliaser {
 
 	/**
 	 * @var array
@@ -9,7 +9,6 @@ class AliasMaker {
 	private $Aliases = [];
 
 	/**
-	 * AliasMaker constructor.
 	 * @param array $Rules
 	 * @throws \Exception
 	 */
