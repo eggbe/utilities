@@ -4,7 +4,7 @@ This is the powerful library provides the set of utilities for different needs.
 
 ## Requirements
 * PHP >= 7.0.0
-* [Eggbe/Helpers](https://github.com/eggbe/helpers)
+* [Able/Helpers](https://github.com/phpable/helpers)
 
 ## Install
 Here's the simpler way to start using Eggbe/Utilities via [composer](http://getcomposer.org):
